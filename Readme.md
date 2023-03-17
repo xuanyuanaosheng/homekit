@@ -12,6 +12,10 @@ HassOS美化主要适合家里有屏幕，主要用来进行展示，这个可�
 ## HassOS的自动化：Node-RED
 相对于上面的展示，智能自动化才是智能家居的核心，但是现在大家似乎更关心美化，反而是自动化忽略好多。
 
+## HassOS的第三方插件库：HACS
+1.  给HACS增加代理功能： https://bbs.hassbian.com/thread-16136-1-1.html (https://github.com/ryanh7/hacs-proxy)
+ 
+
 ## 第三方设备接入HassOS
 
 ### 小米的设备
