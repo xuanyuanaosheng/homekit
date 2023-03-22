@@ -1,0 +1,91 @@
+mqtt:
+  switch:
+  - unique_id: rsq-onoff
+    name: '热水器开关'
+    state_topic: '/rsq/onoff/state'
+    command_topic: '/rsq/onoff/cmd'
+    payload_on: 0
+    payload_off: 1
+  - unique_id: rsq-1rls
+    name: '热水器零冷水单次循环'
+    command_topic: '/rsq/1rls'
+  - unique_id: zwkt-onoff
+    name: '主卧空调开关'
+    state_topic: '/zwkt/onoff/state'
+    command_topic: '/zwkt/onoff/cmd'
+    payload_on: 0
+    payload_off: 1
+
+  select:
+  - unique_id: zwkt-ms
+    name: "主卧空调模式设置"
+    state_topic: '/zwkt/ms'
+    command_topic: '/zwkt/mscmd'
+    options:
+        - "关"
+        - "制冷"
+        - "制热"
+        - "除湿"
+        - "送风"
+        - "智能"
+  - unique_id: zwkt-fs
+    name: "主卧空调风速设置"
+    state_topic: '/zwkt/fs'
+    command_topic: '/zwkt/fscmd'
+    options:
+        - "低风"
+        - "中风"
+        - "高风"
+        - "自动风"
+
+  number:
+  - unique_id: zwkt-wd
+    name: "主卧空调温度设置"
+    state_topic: '/zwkt/wd'
+    command_topic: '/zwkt/wdcmd'
+    unit_of_measurement: '℃'
+    min: 16
+    max: 30
+  - unique_id: rsq-wd
+    name: "热水器温度设置"
+    state_topic: '/rsq/wd'
+    command_topic: '/rsq/wdcmd'
+    unit_of_measurement: '℃'
+    min: 35
+    max: 60
+
+  button:
+  - unique_id: rsq-zt
+    name: '热水器状态查看'
+    command_topic: '/rsq/zt'
+  - unique_id: zwkt-zt
+    name: '主卧空调状态查看'
+    command_topic: '/zwkt/zt'
+
+  climate:
+    - unique_id: zwkt-kp
+      name: 主卧空调卡片
+      payload_on: 0
+      payload_off: 1
+      min_temp: 16
+      max_temp: 30
+      modes:
+        - "off"
+        - "cool"
+        - "heat"
+        - "dry"
+        - "fan_only"
+        - "auto"
+      fan_modes:
+        - "low"
+        - "medium"
+        - "high"
+        - "auto"
+      power_command_topic: "/zwkt/onoff/cmd"
+      mode_state_topic: "/zwkt/mskp"
+      mode_command_topic: "/zwkt/mscmd"
+      temperature_state_topic: "/zwkt/wd"
+      temperature_command_topic: "/zwkt/wdcmd"
+      fan_mode_state_topic: "/zwkt/fskp"
+      fan_mode_command_topic: "/zwkt/fscmd"
+      precision: 1.0
