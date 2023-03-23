@@ -63,6 +63,7 @@ HassOS美化主要适合家里有屏幕，主要用来进行展示，这个可�
 
 -  北京电费查询：https://bbs.hassbian.com/thread-13820-1-1.html (https://github.com/georgezhao2010/bj_sgcc_energy)
 -  江苏电费查询： https://bbs.hassbian.com/thread-12037-1-1.html
+-  南方电网：https://github.com/CubicPill/china_southern_power_grid_stat 
 
 3.  燃气：
 - (https://github.com/zhaoyibo/bj_gas)
