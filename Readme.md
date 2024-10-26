@@ -89,3 +89,15 @@ HassOS美化主要适合家里有屏幕，主要用来进行展示，这个可�
 ### 参考文档
 1. homelab 家庭弱电方案分享 : https://taresky.com/network-setup-2022
 2. NAS / HomeLab 玩家看过来，这是一份非常赞的 Self-Hosted 清单，包含市面上大多数热门自部署软件。 https://selfh.st/apps/
+
+
+---
+## 家庭智能影音
+
+### 黑群晖
+#### 套件中心
+- synocommunity：https://packages.synocommunity.com/
+- 云梦：https://spk.520810.xyz:666
+- 裙下孤魂：http://spk.bobohome.store:8880
+- 我不是狂神：https://spk7.imnks.com/
+
