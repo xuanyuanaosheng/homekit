@@ -85,3 +85,7 @@ HassOS美化主要适合家里有屏幕，主要用来进行展示，这个可�
 2.  https://bbs.hassbian.com/thread-16180-11-1.html (为了使小爱可以语音控制海尔设备，才用MQTT来做，就可以通过巴法云使小爱可以控制海尔设备)
 3.  使用小爱同学控制添加到Homeassistant的非小米设备： https://github.com/al-one/hass-xiaomi-miot/issues/537 (小爱对话记录实体使用场景，需要homeassistant)
 4.  给小爱同学赋能，增加Chatgpt人工智能助手：https://github.com/yihong0618/xiaogpt （思路：通过定时轮训小爱同学的对话功能来实现,不需要homeassistant）
+
+### 参考文档
+1. homelab 家庭弱电方案分享 : https://taresky.com/network-setup-2022
+2. NAS / HomeLab 玩家看过来，这是一份非常赞的 Self-Hosted 清单，包含市面上大多数热门自部署软件。 https://selfh.st/apps/
